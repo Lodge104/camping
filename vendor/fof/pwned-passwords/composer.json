@@ -1,0 +1,39 @@
+{
+  "name": "fof/pwned-passwords",
+  "description": "Check passwords against the Have I Been Pwned password database",
+  "type": "flarum-extension",
+  "license": "MIT",
+  "keywords": [
+    "flarum"
+  ],
+  "authors": [
+    {
+      "name": "Tristian Kelly",
+      "email": "tristian.kelly560@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "flarum/core": "^0.1.0-beta.12",
+    "fof/components": ">=0.1.1",
+    "guzzlehttp/guzzle": "6.*"
+  },
+  "replace": {
+    "reflar/pwned-passwords": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FoF\\PwnedPasswords\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "FoF Pwned Passwords",
+      "icon": {
+        "name": "fas fa-key",
+        "backgroundColor": "#e74c3c",
+        "color": "#fff"
+      }
+    }
+  }
+}

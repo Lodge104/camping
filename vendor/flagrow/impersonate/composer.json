@@ -1,0 +1,43 @@
+{
+    "name": "flagrow/impersonate",
+    "description": "Login as other users of your forum",
+    "keywords": [
+        "extension",
+        "flarum", "flagrow",
+        "impersonate", "login"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "email": "clark.winkelmann@gmail.com",
+            "homepage": "https://clarkwinkelmann.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flagrow/impersonate/issues",
+        "source": "https://github.com/flagrow/impersonate"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.8"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Flagrow Impersonate",
+            "icon": {
+                "name": "fas fa-id-card",
+                "backgroundColor": "#f4f4f4",
+                "color": "#5f4bb6"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/9868"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Flagrow\\Impersonate\\": "src/"
+        }
+    }
+}
